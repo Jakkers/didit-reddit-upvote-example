@@ -8,17 +8,8 @@ import customComment from "@rcode-link/tiptap-comments";
 
 const Tiptap = () => {
   const editor = useEditor({
-    extensions: [
-      StarterKit,
-      customComment.configure({
-        user: {
-          user_id: session.user.id,
-          post_id: postId,
-          parent_comment_id: parentCommentId,
-          name: "comment",
-        },
-      }),
-    ],
+    extensions: [StarterKit],
+    editorProps: { attributes: { name: "comment" } },
 
     //session.user.id, postId, parentCommentId, formData.get("comment")
 
