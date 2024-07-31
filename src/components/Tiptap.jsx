@@ -7,14 +7,19 @@ import customComment from "@rcode-link/tiptap-comments";
 // import { CommentFormButton } from "./CommentFormButton";
 
 const Tiptap = () => {
+  //   const handleChange = (newContent) => {
+  //     onChange(newContent);
+
   const editor = useEditor({
     extensions: [StarterKit],
-    editorProps: { attributes: { name: "comment" } },
 
     //session.user.id, postId, parentCommentId, formData.get("comment")
 
     content: "<p>Type your comment...</p>",
     immediatelyRender: false,
+    // onUpdate: ({ editor }) => {
+    //   handleChange(editor.getHTML());
+    // },
   });
 
   return (

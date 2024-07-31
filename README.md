@@ -6,19 +6,37 @@
 - Deploy it Vercel
 - Fix page titles on post pages to match the post title
 - Handle the error when you click to vote while not logged in to show a nice error message
--
+- Added not found page
+- Added TipTap
 
 🎯 Were there any requirements or goals that you were not quite able to achieve?
 
+- I wasn't able to give the tiptap component the name attribute to allow it to submit the data to the database.
+
 🎯 If so, could you please tell us what was it that you found difficult about these tasks?
+
+- I searched through the docs but to implement this with the current set up was not something I could find clear information on. I attempted various solutions such as adding props and playing with tiptap attributes.
 
 (Optional)
 🏹 Feel free to add any other reflections you would like to share about your submission e.g.
 
 What went really well and what could have gone better?
+
+- Fixing the inital Vercel deployment issues went well.
+- Finding a solutuon to the tiptap component could have gone better.
+
 Detailing useful external sources that helped you complete the assignment (e.g Youtube tutorials).
+Tiptap learning:
+
+- https://www.youtube.com/watch?v=v68TfPwZ8qY
+- https://www.npmjs.com/package/@rcode-link/tiptap-comments
+- https://www.youtube.com/watch?v=LiELuVk12ig
+
 Describing errors or bugs you encountered while completing your assignment.
+
 Requesting feedback about a specific part of your submission.
+
+- How could I add the form submission capability to the tiptap component?
 
 ## Upvote
 

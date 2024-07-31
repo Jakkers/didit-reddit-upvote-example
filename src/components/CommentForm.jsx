@@ -1,6 +1,6 @@
 "use client";
 
-import Tiptap from "@/components/Tiptap";
+// import Tiptap from "@/components/Tiptap";
 
 import { saveComment } from "@/actions/comments";
 import { useSession } from "next-auth/react";
@@ -30,12 +30,12 @@ export function CommentForm({ postId, parentCommentId }) {
       {isOpen ? (
         <>
           <form action={boundDispatch} className="flex flex-col space-y-3">
-            {/* <textarea
+            <textarea
               name="comment"
               className="bg-zinc-200 p-3 rounded"
               placeholder="Type your comment..."
-            /> */}
-            <Tiptap />
+            />
+            {/* <Tiptap /> */}
             <CommentFormButton />
           </form>
         </>
