@@ -11,8 +11,8 @@ export async function UserInfo() {
     <div>
       {session ? (
         <div>
-          {session.username}{" "}
-          <span className="text-xs text-zinc-400 mr-3">#{session.id}</span>
+          {session.user.name}{" "}
+          <span className="text-xs text-zinc-400 mr-3">#{session.user.id}</span>
           <LogoutButton />
         </div>
       ) : (
