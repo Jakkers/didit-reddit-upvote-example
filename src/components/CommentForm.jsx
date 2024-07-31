@@ -35,7 +35,7 @@ export function CommentForm({ postId, parentCommentId }) {
               className="bg-zinc-200 p-3 rounded"
               placeholder="Type your comment..."
             /> */}
-            <Tiptap />
+            <Tiptap name="comment" />
             <CommentFormButton />
           </form>
         </>
