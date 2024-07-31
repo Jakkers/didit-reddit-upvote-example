@@ -1,5 +1,7 @@
 "use client";
 
+import Tiptap from "@/components/Tiptap";
+
 import { saveComment } from "@/actions/comments";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
@@ -33,6 +35,7 @@ export function CommentForm({ postId, parentCommentId }) {
               className="bg-zinc-200 p-3 rounded"
               placeholder="Type your comment..."
             />
+            <Tiptap />
             <CommentFormButton />
           </form>
         </>
