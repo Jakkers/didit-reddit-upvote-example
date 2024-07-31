@@ -9,6 +9,7 @@ const Tiptap = () => {
   const editor = useEditor({
     extensions: [StarterKit],
     content: "<p>Type your comment...</p>",
+    immediatelyRender: false,
   });
 
   return (
