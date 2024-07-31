@@ -10,6 +10,7 @@ const Tiptap = () => {
     extensions: [StarterKit],
     content: "<p>Type your comment...</p>",
     immediatelyRender: false,
+    name: "comment",
   });
 
   return (
